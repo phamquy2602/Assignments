@@ -3,8 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
+package controller;
 
-import com.sun.java.util.jar.pack.Instruction.Switch;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
  *
  * @author quyde
  */
-public class math extends HttpServlet {
+public class home extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -33,10 +33,10 @@ public class math extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet math</title>");  
+            out.println("<title>Servlet home</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet math at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet home at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -54,24 +54,7 @@ public class math extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         processRequest(request, response);
-        
-        String n1 = request.getParameter("num1");
-        String n2 = request.getParameter("num2");
-        String o = request.getParameter("op");
-       
-        
     } 
-    private String cal(double num1,double num2,String o){
-       String rs ="" ;
-       switch(o) {
-           case"+" : {
-              
-               rs = (n1 + n2) ;
-           }
-           break;
-
-       }
-    }
 
     /** 
      * Handles the HTTP <code>POST</code> method.

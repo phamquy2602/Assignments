@@ -5,76 +5,126 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
+
+<!-- Head -->
 <head>
-<meta charset="UTF-8">
-<title>Login Form</title>
-<style>
-body {
-    background-image: url("https://th.bing.com/th/id/R.ba4cc2a9f7a24208ec00c82ed31f454a?rik=ZrjfixKyMvgrnQ&riu=http%3a%2f%2feskipaper.com%2fimages%2fbackground-wallpapers-9.jpg&ehk=MZ7DhIwpFI%2bAkA3Cf2fEzFGhBIZ53TXqEoE2vyFCh5A%3d&risl=&pid=ImgRaw&r=0.jpg");
-    background-size: cover;
-}
 
-.login-form {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    padding: 20px;
-    width: 400px;
-    height: 300px;
-    margin: 100px auto;
-    box-shadow: 0 0 10px #333;
-}
+<title>Login</title>
 
-.login-form h3 {
-    text-align: center;
-    margin-top: 0;
-}
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Existing Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
 
-.login-form input[type="text"], .login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    font-size: 16px;
-}
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 
-.login-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
+<!-- Style --> <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
-.login-form input[type="submit"]:hover {
-    background-color: #3e8e41;
-}
-</style>
+<!-- Fonts -->
+<link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+<!-- //Fonts -->
+
 </head>
+<!-- //Head -->
+
+<!-- Body -->
 <body>
-    <form class="login-form" action="LoginServlet" method="post">
-        <h3>Login Form</h3>
-        <table>
-            <tr>
-                <td>Username:</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Login"></td>
-                <td><input type="reset" value="Reset"></td>
-            </tr>
-        </table>
-    </form>
+
+	<h1>EXISTING LOGIN FORM</h1>
+
+	<div class="w3layoutscontaineragileits">
+	<h2>Login here</h2>
+		<form action="#" method="post">
+			<input type="email" Name="Username" placeholder="EMAIL" required="">
+			<input type="password" Name="Password" placeholder="PASSWORD" required="">
+			<ul class="agileinfotickwthree">
+				<li>
+					<input type="checkbox" id="brand1" value="">
+					<label for="brand1"><span></span>Remember me</label>
+					<a href="#">Forgot password?</a>
+				</li>
+			</ul>
+			<div class="aitssendbuttonw3ls">
+				<input type="submit" value="LOGIN">
+				<p> To register new account <span>→</span> <a class="w3_play_icon1" href="#small-dialog1"> Click Here</a></p>
+				<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+	
+	<!-- for register popup -->
+	<div id="small-dialog1" class="mfp-hide">
+		<div class="contact-form1">
+			<div class="contact-w3-agileits">
+				<h3>Register Form</h3>
+				<form action="#" method="post">
+						<div class="form-sub-w3ls">
+							<input placeholder="User Name"  type="text" required="">
+							<div class="icon-agile">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-sub-w3ls">
+							<input placeholder="Email" class="mail" type="email" required="">
+							<div class="icon-agile">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-sub-w3ls">
+							<input placeholder="Password"  type="password" required="">
+							<div class="icon-agile">
+								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="form-sub-w3ls">
+							<input placeholder="Confirm Password"  type="password" required="">
+							<div class="icon-agile">
+								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+							</div>
+						</div>
+					<div class="login-check">
+						 <label class="checkbox"><input type="checkbox" name="checkbox" checked="">I Accept Terms & Conditions</label>
+					</div>
+					<div class="submit-w3l">
+						<input type="submit" value="Register">
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<!-- //for register popup -->
+	
+	
+
+	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<!-- pop-up-box-js-file -->  
+		<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<!--//pop-up-box-js-file -->
+	<script>
+		$(document).ready(function() {
+		$('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+			type: 'inline',
+			fixedContentPos: false,
+			fixedBgPos: true,
+			overflowY: 'auto',
+			closeBtnInside: true,
+			preloader: false,
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+																		
+		});
+	</script>
+
 </body>
+
+
 </html>
